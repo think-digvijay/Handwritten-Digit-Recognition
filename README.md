@@ -32,6 +32,11 @@ Other Libraries
 PIL, win32gui
 ```
 
+## Neural Network Architecture
+
+![](Images/ConvModel.png)
+![](Images/NeuralNetwork.png)
+
 
 ## System Working
 The model uses mnist dataset which contains 60000 handwritten digit images. Before feeding the nueral newtwork with the images, they are pre-processed. Several convolutional layers and pooling layers are applied and the output of the 2nd max pooling layer is flattened to feed the neural network input nodes. 
