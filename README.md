@@ -32,23 +32,6 @@ Other Libraries
 PIL, win32gui
 ```
 
-## Neural Network Architecture
-
-Sequential Model.
-```mermaid
-graph LR
-A(Input Layer) 
-B{1st Convolution} 
-C[MaxPool]
-D{2nd Convolution}
-E[MaxPool]
-F((Flatten - A))
-A --> B
-B --> C 
-C --> D
-D --> E
-E --> F
-```
 
 ## System Working
 The model uses mnist dataset which contains 60000 handwritten digit images. Before feeding the nueral newtwork with the images, they are pre-processed. Several convolutional layers and pooling layers are applied and the output of the 2nd max pooling layer is flattened to feed the neural network input nodes. 
