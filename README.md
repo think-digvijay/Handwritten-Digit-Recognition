@@ -49,37 +49,6 @@ C --> D
 D --> E
 E --> F
 ```
-```mermaid
-graph LR
-J((Flatten - A))
-G{Dense 1}
-H{Dense 2}
-I{Dense 3}
-0((0))
-1((1))
-2((2))
-3((3))
-4((4))
-5((5))
-6((6))
-7((7))
-8((8))
-9((9))
-
-J --> G
-G -- Dropout --> H
-H -- Dropout --> I
-I --> 0
-I --> 1
-I --> 2
-I --> 3
-I --> 4
-I --> 5
-I --> 6
-I --> 7
-I --> 8
-I --> 9
-```
 
 ## System Working
 The model uses mnist dataset which contains 60000 handwritten digit images. Before feeding the nueral newtwork with the images, they are pre-processed. Several convolutional layers and pooling layers are applied and the output of the 2nd max pooling layer is flattened to feed the neural network input nodes. 
