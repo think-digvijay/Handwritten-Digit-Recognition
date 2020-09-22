@@ -45,6 +45,7 @@ The model uses mnist dataset which contains 60000 handwritten digit images. Befo
 The dense layers are the main layers of the neural network which are followed by a dropout value to prevent the model from over fitting. 10 epochs gives an average accuracy of 0.9981. 
 Trained weights are stored in a file named mnist.h5.
 >Note: The provided file is a pretrained file. It is recommended to retrain the entire model with >=8 epochs to increase accuracy of the system.
+Make sure if you are testing it then update the file location accordingly
 
 The GUI console is developed using the tkinter library. Input is a drawable white screen where the user can draw the numbers and check for the prediction.
 >Note: If you are using Jupyter Notebook, the console will not pop on the screen. You will find the running file on the taskbar of your operating system.
